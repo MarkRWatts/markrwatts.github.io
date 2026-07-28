@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Mark Watts</title>
+<meta name="description" content="Get in touch with Mark Watts about cyber security leadership, governance and strategy.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header is-solid">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Mark <span>Watts</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <button class="mobile-close" aria-label="Close menu">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="experience.html">Experience</a>
+  <a href="insights.html">Insights</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Get in touch</h1>
+    <p>Open to conversations on cyber security leadership, governance and strategy. Send a message and I'll get back to you directly.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-intro">
+        <span class="section-label">Say Hello</span>
+        <h2>Let's start a conversation</h2>
+        <p>Whether it's a question about a role, an invitation to speak, or a broader conversation about cyber security governance and leadership, I read every message myself.</p>
+        <p>Fill in the form and I'll reply as soon as I can.</p>
+      </div>
+
+      <div>
+        <form id="contact-form" novalidate>
+          <input type="hidden" name="apiKey" value="sf_98fd184c27189c3423dd76ce">
+          <input type="hidden" name="subject" value="New message from markrwatts.github.io">
+
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="honeypot">Leave this field empty</label>
+            <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold contact-submit">Send Message</button>
+
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="index.html" class="logo">Mark <span>Watts</span></a>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-meta">&copy; <span id="year"></span> Mark Watts. Built &amp; hosted on GitHub Pages.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact-form.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
