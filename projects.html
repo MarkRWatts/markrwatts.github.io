@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | Mark Watts</title>
-<meta name="description" content="Get in touch with Mark Watts about cyber security leadership, governance and strategy.">
+<title>Projects | Mark Watts</title>
+<meta name="description" content="Personal software projects by Mark Watts, built for fun and to stay hands-on with code.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,8 @@
       <a href="about.html">About</a>
       <a href="experience.html">Experience</a>
       <a href="insights.html">Insights</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
   </div>
@@ -40,51 +40,25 @@
 
 <section class="page-hero">
   <div class="container">
-    <span class="eyebrow">Contact</span>
-    <h1>Get in touch</h1>
-    <p>Open to conversations on cyber security leadership, governance and strategy. Send a message and I'll get back to you directly.</p>
+    <span class="eyebrow">Projects</span>
+    <h1>Personal software projects</h1>
+    <p>Occasional projects built for fun and to stay hands-on with code outside of security leadership work. Source is on GitHub.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="contact-layout">
-      <div class="contact-intro">
-        <span class="section-label">Say Hello</span>
-        <h2>Let's start a conversation</h2>
-        <p>Whether it's a question about a role, an invitation to speak, or a broader conversation about cyber security governance and leadership, I read every message myself.</p>
-        <p>Fill in the form and I'll reply as soon as I can.</p>
-      </div>
-
-      <div>
-        <form id="contact-form" novalidate>
-          <input type="hidden" name="apiKey" value="sf_98fd184c27189c3423dd76ce">
-          <input type="hidden" name="subject" value="New message from markrwatts.github.io">
-
-          <div class="form-honeypot" aria-hidden="true">
-            <label for="honeypot">Leave this field empty</label>
-            <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
-          </div>
-
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-          </div>
-
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-          </div>
-
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-gold contact-submit">Send Message</button>
-
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
+    <div class="section-head">
+      <span class="section-label">On GitHub</span>
+      <h2>Selected projects</h2>
+    </div>
+    <div class="engagement-grid project-grid">
+      <div class="engagement project-card">
+        <span class="tag">GPL-3.0</span>
+        <h3><a href="https://github.com/MarkRWatts/reFresh" target="_blank" rel="noopener">re:Fresh</a></h3>
+        <p>A personal meal-planning app for browsing HelloFresh (UK) recipes as cards and planning a week's meals around shared ingredients, cutting food waste and duplicate shopping. Single-user, local-first, with a weekly planner, consolidated shopping list, and printable recipe and shopping-list pages.</p>
+        <div class="project-stack">Next.js &middot; TypeScript &middot; Prisma &middot; PostgreSQL</div>
+        <a class="engagement-link" href="https://github.com/MarkRWatts/reFresh" target="_blank" rel="noopener">View on GitHub &rarr;</a>
       </div>
     </div>
   </div>
@@ -107,7 +81,6 @@
 </footer>
 
 <script src="js/main.js"></script>
-<script src="js/contact-form.js"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
