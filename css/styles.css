@@ -461,6 +461,14 @@ p { margin: 0; }
   color: var(--ink);
   margin-bottom: 16px;
 }
+.timeline-role h3 a:hover { color: var(--gold); }
+
+.timeline-role p {
+  color: var(--ink-soft);
+  line-height: 1.75;
+  font-size: 0.98rem;
+  margin-bottom: 0;
+}
 
 .timeline-role ul {
   margin: 0;
@@ -718,27 +726,6 @@ p { margin: 0; }
 
 @media (max-width: 900px) {
   .contact-layout { grid-template-columns: 1fr; gap: 44px; }
-}
-
-/* ---------------------------------- Projects ---------------------------------- */
-
-.project-grid {
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-.project-card h3 {
-  font-size: 1.15rem;
-  margin: 16px 0 12px;
-  color: var(--ink);
-  font-weight: 600;
-  font-family: var(--font-sans);
-  letter-spacing: 0.01em;
-}
-.project-card h3 a:hover { color: var(--gold); }
-.project-stack {
-  margin-top: 16px;
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  color: var(--ink-soft);
 }
 
 /* ---------------------------------- Responsive ---------------------------------- */
